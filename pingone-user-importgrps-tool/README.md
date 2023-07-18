@@ -15,11 +15,11 @@ To get usage information:
 Your csv should contain a list of group ids.
 
 example (first line should be the word "id"):
-
+```
 id
 31d502dd-8171-49af-ba4c-fc189bf262c6
 b08f0f61-259c-48cb-9786-e63abce092f3
-
+```
 
 ## Prepare P14C environment and collect information.
 
@@ -63,21 +63,21 @@ To confirm Maven is installed (only required to rebuild the project) type `mvn -
     * If you notice a number of errors in the command window, don't kill the task, let it complete. 
     * Advanced usage details are available if you run java -jar user-import-tool-1.0-SNAPSHOT-jar-with-dependencies.jar -?
 
-    ```
+```
     java -jar user-import-tool-1.0-SNAPSHOT-jar-with-dependencies.jar --csvFile <YOUR CSV FILE> --environmentId <YOUR ENVIRONMENT ID> --clientId <YOUR CLIENT ID> --clientSecret <YOUR CLIENT SECRET> --userID <YOUR DESTINATION USER ID>
-    ```
+```
 
     For example:
     
-    ```
+```
  java -jar target/user-import-tool-1.0-SNAPSHOT-jar-with-dependencies.jar --csvFile file.csv --environmentId d2fea457-f35223 --clientId a133c900ed31 --clientSecret vdmbm --userID myuser-id-value
          2023-07-18 09:56:58,392 [main] INFO  - Importing users from CSV file: /projects/pingone-user-importgrps-tool/file.csv
          2023-07-18 09:56:59,162 [main] INFO  - Successfully imported 2 users with 0 errors.
-    ```
+```
 
    Or create a file of user ids and run in a loop like:
 
-    ```
+```
   cat myusers.txt
     f49b68d8-4aec-4761-a8e3-72c566d98017
     5896b9f1-1de8-4257-87e9-ebe87bac42bf
@@ -90,7 +90,7 @@ To confirm Maven is installed (only required to rebuild the project) type `mvn -
 2023-07-18 09:56:59,162 [main] INFO  - Successfully imported 2 users with 0 errors.
 2023-07-18 09:56:59,462 [main] INFO  - Importing users from CSV file: /projects/pingone-user-importgrps-tool/file.csv
 2023-07-18 09:57:00,079 [main] INFO  - Successfully imported 2 users with 0 errors.
-    ```
+```
 
 
 
